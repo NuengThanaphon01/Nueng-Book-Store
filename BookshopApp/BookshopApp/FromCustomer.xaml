@@ -1,0 +1,59 @@
+﻿<Window x:Class="BookshopApp.FromCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookshopApp"
+        mc:Ignorable="d"
+        Title="FromCustomer" Height="548.875" Width="800">
+    <Grid>
+        <GroupBox x:Name="groupBox" Header="" HorizontalAlignment="Left" Height="227" Margin="10,34,0,0" VerticalAlignment="Top" Width="772" Background="#FFD1F3FD">
+            <Button x:Name="btnre" Content="รีเฟรช" HorizontalAlignment="Left" Margin="625,124,0,0" VerticalAlignment="Top" Width="125" Height="40" Click="btnre_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="#FF77D7F3" Opacity="0.5"/>
+                </Button.Background>
+            </Button>
+
+        </GroupBox>
+        <TextBox x:Name="txtcusid" HorizontalAlignment="Left" Height="23" Margin="147,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133"/>
+        <TextBox x:Name="txtcusName" HorizontalAlignment="Left" Height="23" Margin="394,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="25,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="เลขประจำตัวลูกค้า :" FontWeight="Bold" FontSize="14"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="304,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="ชื่อ-นามสกุล :" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="txtaddress" HorizontalAlignment="Left" Height="89" Margin="147,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="467"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="108,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="ที่อยู่ :" FontWeight="Bold" FontSize="14" RenderTransformOrigin="1.139,0.587"/>
+        <TextBox x:Name="txtemail" HorizontalAlignment="Left" Height="23" Margin="147,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="467"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="99,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Email :" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="btnsearch" Content="ค้นหา" HorizontalAlignment="Left" Margin="552,55,0,0" VerticalAlignment="Top" Width="72" Click="btnsearch_Click" Height="23">
+            <Button.Background>
+                <SolidColorBrush Color="#FFD4CFCF" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="txtserch" HorizontalAlignment="Left" Height="23" Margin="320,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+        <Button x:Name="btnadd" Content="เพิ่ม" HorizontalAlignment="Left" Margin="641,55,0,0" VerticalAlignment="Top" Width="125" Height="35" Click="btnadd_Click" FontWeight="Bold" FontSize="16">
+            <Button.Background>
+                <SolidColorBrush Color="#FFC4E6D5" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnremove" Content="ลบ" HorizontalAlignment="Left" Margin="641,95,0,0" VerticalAlignment="Top" Width="125" Height="35" Click="btnremove_Click" FontWeight="Bold" FontSize="16">
+            <Button.Background>
+                <SolidColorBrush Color="#FFF09595" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnupdate" Content="แก้ไข" HorizontalAlignment="Left" Margin="641,135,0,0" VerticalAlignment="Top" Width="125" Height="35" Click="btnupdate_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FFA5EBFF" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="229" Margin="10,266,0,0" VerticalAlignment="Top" Width="772"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="26" Margin="647,59,0,0" VerticalAlignment="Top" Width="27" Source="add.png"/>
+        <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="26" Margin="647,100,0,0" VerticalAlignment="Top" Width="27" Source="delete.png"/>
+        <Image x:Name="image_Copy1" HorizontalAlignment="Left" Height="26" Margin="647,140,0,0" VerticalAlignment="Top" Width="27" Source="pencil.png"/>
+        <Image x:Name="image_Copy2" HorizontalAlignment="Left" Height="26" Margin="647,182,0,0" VerticalAlignment="Top" Width="27" Source="refresh.png"/>
+        <Button x:Name="btnback" Content="กลับหน้าเมนู" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="113" Height="24" FontWeight="Bold" Click="btnback_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FFBAF9D1" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="image_Copy3" HorizontalAlignment="Left" Height="19" Margin="14,12,0,0" VerticalAlignment="Top" Width="20" Source="back.png"/>
+    </Grid>
+</Window>

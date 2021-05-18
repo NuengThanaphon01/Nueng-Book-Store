@@ -1,0 +1,35 @@
+﻿<Window x:Class="BookshopApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookshopApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="324.744" Width="576.5">
+    <Grid Background="#FF51CBE6">
+        <Frame x:Name="frame" Content="" HorizontalAlignment="Left" Height="226" Margin="275,32,0,0" VerticalAlignment="Top" Width="283">
+            <Frame.Background>
+                <SolidColorBrush Color="White" Opacity="0.3"/>
+            </Frame.Background>
+        </Frame>
+        <TextBox x:Name="txtusername" HorizontalAlignment="Left" Height="22" Margin="321,123,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="190" GotFocus="txtusername_GotFocus">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.7"/>
+            </TextBox.Background>
+        </TextBox>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="321,150,0,0" VerticalAlignment="Top" Width="190" Height="22" Password="Password" GotFocus="passwordBox_GotFocus">
+            <PasswordBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.7"/>
+            </PasswordBox.Background>
+        </PasswordBox>
+        <Button x:Name="btnlogin" Content="SIGN IN" HorizontalAlignment="Left" Margin="362,177,0,0" VerticalAlignment="Top" Width="114" Height="27" Click="btnlogin_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FFDDDDDD" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="368,57,0,0" TextWrapping="Wrap" Text="LOGIN" VerticalAlignment="Top" FontWeight="Bold" FontFamily="-JS Mookravee" FontSize="48"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="70,66,0,0" VerticalAlignment="Top" Width="100" Source="book-clipart-green-11.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="43,174,0,0" TextWrapping="Wrap" Text="หนึ่ง BOOK STORE" VerticalAlignment="Top" FontFamily="-JS Hariphan" FontSize="24" FontStyle="Italic" Height="29" Width="201"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="10,269,0,0" TextWrapping="Wrap" Text="Dev by Thanaphon" VerticalAlignment="Top" FontStyle="Italic" FontFamily="-JS Saksit Allcaps"/>
+    </Grid>
+</Window>
